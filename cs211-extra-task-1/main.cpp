@@ -36,6 +36,11 @@ int main()
 	std::cin >> hours_double;
 	std::cout << "Result: " << to_24_hour_clock(hours_double);
 	std::cout << std::endl;
+	std::cout << std::endl;
+
+	std::cout << "Determine the hours part, minutes part and seconds part of a time in seconds\nEnter the number of seconds: ";
+	std::cin >> seconds;
+	std::cout << "Result: " << get_hours(seconds) << ":" << get_minutes(seconds) << ":" << get_seconds(seconds);
 
 	return 0;
 }
