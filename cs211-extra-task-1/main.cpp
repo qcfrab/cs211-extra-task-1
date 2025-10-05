@@ -5,7 +5,7 @@ int main()
 {
 	setlocale(LC_ALL, "RUSSIAN");
 	
-	double time_1, time_2;
+	double time_1, time_2, hours_double;
 	int hours, minutes, seconds;
 
 	std::cout << "Seconds difference\nEnter the first value: ";
@@ -29,6 +29,12 @@ int main()
 	std::cout << "Enter the number of seconds: ";
 	std::cin >> seconds;
 	std::cout << "Result: " << to_float_hours(hours, minutes, seconds);
+	std::cout << std::endl;
+	std::cout << std::endl;
+
+	std::cout << "To 24 hour clock\nEnter the number of hours: ";
+	std::cin >> hours_double;
+	std::cout << "Result: " << to_24_hour_clock(hours_double);
 	std::cout << std::endl;
 
 	return 0;
