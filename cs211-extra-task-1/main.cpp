@@ -5,8 +5,8 @@ int main()
 {
 	setlocale(LC_ALL, "RUSSIAN");
 	
-	double time_1, time_2, hours_double;
-	int hours, minutes, seconds;
+	double time_1, time_2, hours_double, time;
+	int hours, minutes, seconds, utc_offset;
 
 	std::cout << "Seconds difference\nEnter the first value: ";
 	std::cin >> time_1;
@@ -41,6 +41,15 @@ int main()
 	std::cout << "Determine the hours part, minutes part and seconds part of a time in seconds\nEnter the number of seconds: ";
 	std::cin >> seconds;
 	std::cout << "Result: " << get_hours(seconds) << ":" << get_minutes(seconds) << ":" << get_seconds(seconds);
+	std::cout << std::endl;
+	std::cout << std::endl;
+
+	std::cout << "Time to utc\nEnter UTC time zone: ";
+	std::cin >> utc_offset;
+	std::cout << "Enter the time: ";
+	std::cin >> time;
+	std::cout << "Result: " << time_to_utc(utc_offset, time) << std::endl;
+	std::cout << std::endl;
 
 	return 0;
 }
