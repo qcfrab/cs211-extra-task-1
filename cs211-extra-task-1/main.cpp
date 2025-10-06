@@ -51,5 +51,12 @@ int main()
 	std::cout << "Result: " << time_to_utc(utc_offset, time) << std::endl;
 	std::cout << std::endl;
 
+	std::cout << "Time from utc\nEnter UTC time zone: ";
+	std::cin >> utc_offset;
+	std::cout << "Enter the time: ";
+	std::cin >> time;
+	std::cout << "Result: " << time_from_utc(utc_offset, time) << std::endl;
+	std::cout << std::endl;
+
 	return 0;
 }
